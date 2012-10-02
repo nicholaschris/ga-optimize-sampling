@@ -1,0 +1,9 @@
+This document contains the todo list for ga_optimize_sampling.
+
+TODO:
+
+1. Allow for use in all operating systems.
+2. Give user flexibility over which netcdf file to use.
+3. Allow user to choose how to mask the netcdf file.
+4. Make the data used in the ga a class in order to add attributes.
+

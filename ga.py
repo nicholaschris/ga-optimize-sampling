@@ -2,12 +2,12 @@
 #ga.py
 #genetic_algorithm_version5000.py
 # 	TODO
-#	add comments
+#	add comments [fixed]
 #	make sure it works
-#	check why the algorithm never chooses points above lat=35
-#	why does the final fitness message differ from the loop fitness message?
-#	What is 4095 and what is 7200?
-#	Does sort pop work if it is a list and not dictionary?
+#	check why the algorithm never chooses points above lat=35 [fixed]
+#	why does the final fitness message differ from the loop fitness message? [fixed]
+#	What is 4095 and what is 7200? [fixed]
+#	Does sort pop work if it is a list and not dictionary? [fixed]
 #	Using inheritance or other OOP thingies?
 
 import datetime
