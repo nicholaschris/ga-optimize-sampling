@@ -31,18 +31,19 @@ class GeneMap(object):
 		lon_start = 0
 		lon_end = 182
 		masked_value = 1e20
-		self.array = load_cflux_masked.load_file(time_end=10, lat_start = 0, lat_end=40, lon_end=180) #!
+		self.array = np.random.randint(0, 10, size=(10, 40, 180)) # For testing purposes
+		#~ self.array = load_cflux_masked.load_file(time_end=10, lat_start = 0, lat_end=40, lon_end=180) #!
 		#~ self.array = ma.reshape(self.array, (1, 40, 180))
-		ma.isMA(self.array)
-		print np.shape(self.array) 
+		#~ ma.isMA(self.array)
+		#~ print np.shape(self.array) 
 		self.array_shape = np.shape(self.array)
 		self.array_size = np.size(self.array)
-		print self.array_size
+		#~ print self.array_size
 		self.time_len = self.array_shape[0]
 		self.lat_len = self.array_shape[1]
 		self.lon_len = self.array_shape[2]
 		self.string_length = len(bin(self.array_size)[2:]) # - 1 #WHY minus 1??? because of masked values???
-		print self.string_length
+		#~ print self.string_length
 		
 	def make_gene_map_2(self):
 		'''

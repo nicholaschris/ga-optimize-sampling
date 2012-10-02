@@ -1,7 +1,7 @@
 #! usr/bin/python
 # ga_class.py
 
-'''Doc String.'''
+'''All the attributes and methods for the ga class.'''
 
 import numpy as np
 import random
