@@ -19,7 +19,7 @@ In make\_gene\_map.py:
 	eg.{'001101': {'location': (0, 10, 5), 'value': 1.2},
 	    '001111': {'location': (0, 19, 6), 'value': 3.0}} 
 
-	If the last binary string is has zeros in it eg '101111'
+If the last binary string is has zeros in it eg '101111'
 	then more binary strings are added to the dictionary
 	until all the possible permuations of 0, 1 are used.
 	These value and loaction for these binary strings are
