@@ -7,7 +7,6 @@ import numpy as np
 import random
 from numpy import ma
 from operator import itemgetter
-import new_calc_chrom_for_rbf
 from scipy.interpolate import Rbf
 
 class GeneticAlgorithm(object):
