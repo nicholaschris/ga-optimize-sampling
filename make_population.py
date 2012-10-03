@@ -18,7 +18,7 @@ class InitPopulation(object):
 		self.gene_size = 0
 
  
-	def get_gene_size(self, number):
+	def get_gene_size(self, number): # possibly not needed
 		'''
 		In order to make a chromosome, the number
 		of bits in each gene of the chromosome needs to be known.
@@ -41,6 +41,10 @@ class InitPopulation(object):
 		# print self.new_chromosome # debug
 		return self.new_chromosome
 
+	def make_chromosome_erok81(self):
+		new_chromosome = random.getrandbits(self.gene_size * self.chromosome_size)
+		return list('{:b}'.format(new_chromosome))
+		
 	def set_up_new_pop(self):
 		'''
 		According to the user given population size, a list of chromosomes is created.
@@ -52,3 +56,7 @@ class InitPopulation(object):
 			dictionary['individual_no'] = i
 			dictionary['chrom_list'] = list[i]
 			self.pop_list = np.append(self.pop_list, dictionary)
+			
+	def set_up_new_pop_erok81(self):
+		dictionary = {'individual_no':i, 'chrome_list':self.make_chromosome_erok81()}
+		self.pop_list = np.append(self.pop_list, dictionary)

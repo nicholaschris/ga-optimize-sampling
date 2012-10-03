@@ -78,8 +78,8 @@ class GeneMap(object):
 			# print self.count # += 1
 		self.last_valid_binary_string = binary_string
 		binary_string_old = binary_string
-		not_valid_first = eval('0b' + binary_string) + 1
-		not_valid_last = eval('0b' + '1'*(self.string_length)) # added minus one just for nonmasked version NB
+		not_valid_first = int(binary_string, 2) + 1
+		not_valid_last = int('1'*(self.string_length), 2) # added minus one just for nonmasked version NB
 		self.count = count
 		print count
 		print binary_string
