@@ -1,5 +1,8 @@
 ga-optimize-sampling
 
+TODO:
+Update with most recent implementation
+
 A Genetic Algorithm implementation in python that optimizes
 sampling in 3D space.
 
